@@ -1,0 +1,43 @@
+<form #f='ngForm' (ngSubmit)='submit(f.values)' ngNativeValidate> 
+  <div class='form-group'>
+    <label for='id'>Id</label>
+    <input type="text" name='id' [(ngModel)]='policyData.id' class='form-control'>
+  </div>
+  <div class='form-group'>
+    <label for='policyHolderName'>Policy Holder Name</label>
+    <input type='text' name='policyHolderName' [(ngModel)]='policyData.policyHolderName' class='form-control'>
+  </div>
+  <div class='form-group'>
+    <label for='policyAmount'>Policy Amount</label>
+    <input type='text' name='policyAmount' [(ngModel)]='policyData.policyAmount' class='form-control'>
+  </div>
+  <div class='form-group'>
+    <label for='maturityDate'>Maturity Date</label>
+    <input type='date' name='maturityDate' [(ngModel)]='policyData.maturityDate' class='form-control'>
+  </div>
+  <div class='form-group'>
+    <input type="submit" [value]='buttonText' class='btn btn-dark'>
+  </div>
+</form>
+<table class="table table-striped table-bordered">
+  <tr>
+    <td><label>Enter Policy Holder Name: </label></td>
+    <td><input type="text" [(ngModel)]='searchName'></td>
+  </tr>
+  <tr>
+    <th>Id</th>
+    <th>Policy Holder Name</th>
+    <th>Policy Amount</th>
+    <th>Maturity Date</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let eachPolicy of policyList | filter:'policyHolderName':searchName">
+    <td>{{eachPolicy.id}}</td>
+    <td>{{eachPolicy.policyHolderName | uppercase}}</td>
+    <td>{{eachPolicy.Amount | currency :'INR':'symbol'}}</td>
+    <td>{{eachPolicy.maturityDate | date:'medium'}}</td>
+    <td><button class="fa fa-2x fa-edit" (click)='update(eachPolicy)'></button></td>
+    <td><button class="fa fa-2x fa-remove" (click)='remove(eachPolicy)'></button></td>
+  </tr>
+</table>

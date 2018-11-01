@@ -1,0 +1,12 @@
+<table class="table table-striped">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Mobile Number</th>
+  </tr>
+  <tr *ngFor = 'let eachAdvisor of advisorList'>
+    <td>{{eachAdvisor.id}}</td>
+    <td>{{eachAdvisor.name}}</td>
+    <td>{{eachAdvisor.mobileNumber}}</td>
+  </tr>
+</table>

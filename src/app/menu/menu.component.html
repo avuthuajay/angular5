@@ -1,0 +1,9 @@
+<nav class="navbar navbar-expand bg-danger">
+  <ul class='navbar-nav'>
+    <li *ngFor='let eachLink of linksFromParent' class='nav-item'>
+      <a [href]="eachLink.inkRef" [class]='eachLink.linkStyle' class="nav-link" style="color: seashell">{{eachLink.linkText}}</a>
+    </li>
+    <li class='nav-item'><a href="" *ngIf='showLogin' class="nav-link" appHighLight >Login</a></li>
+    <li class='nav-item'><a href="" *ngIf='showLogout' class="nav-link" appHighLight >Logout</a></li>
+  </ul>
+</nav>

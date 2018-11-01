@@ -1,0 +1,10 @@
+<label>Enter your Age</label>
+<!-- Two way binding, Event Binding -->
+<input type="text" [(ngModel)]='age' (blur)='changeStatus()'>
+
+<!-- TProperty binding non string values -->
+<input type="button"  value="Get Quote" [disabled]='isDisabled' (click)='showPolicy()'>
+
+<p>Customer's Age: {{age}}</p>
+
+<p>{{suggestedPolicy}}</p>
