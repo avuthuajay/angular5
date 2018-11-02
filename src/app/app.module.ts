@@ -62,7 +62,7 @@ import { ChildComponent } from './child/child.component';
   ],
   providers: [HttpClient],
   entryComponents: [ShowLocatoinComponent],
-  // bootstrap: [AppComponent]
-  bootstrap: [LifeCycleComponent]
+  bootstrap: [AppComponent]
+  // bootstrap: [LifeCycleComponent]
 })
 export class AppModule { }
