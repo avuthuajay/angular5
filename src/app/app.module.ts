@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// import {NgxPaginationModule} from 'ngx-pagination';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +23,8 @@ import { AddElementDirective } from './add-element.directive';
 import { ShowLocatoinComponent } from './show-locatoin/show-locatoin.component';
 import { ShowpolicydetailsComponent } from './showpolicydetails/showpolicydetails.component';
 import { FilterPipe } from './filter.pipe';
+import { ShowHealthPolicyComponent } from './show-health-policy/show-health-policy.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -42,14 +44,16 @@ import { FilterPipe } from './filter.pipe';
     AddElementDirective,
     ShowLocatoinComponent,
     ShowpolicydetailsComponent,
-    FilterPipe
+    FilterPipe,
+    ShowHealthPolicyComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    // NgxPaginationModule,
+    NgxPaginationModule,
     FormsModule
   ],
   providers: [HttpClient],

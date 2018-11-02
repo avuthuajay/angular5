@@ -10,6 +10,7 @@ import { InsuranceAPIService } from '../insurance-api.service';
 export class ShowpolicydetailsComponent implements OnInit {
 
   searchName = '';
+  policyList: PolicyDetail[] = [];
   policyData: PolicyDetail = {
     id: 0,
     policyHolderName: '',
@@ -18,7 +19,6 @@ export class ShowpolicydetailsComponent implements OnInit {
   };
   buttonText = 'Add';
   page: number;
-  policyList: PolicyDetail[] = [];
 
   @ViewChild('f') form: any;
   indexPositon: number;

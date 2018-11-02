@@ -1,3 +1,4 @@
+<a [routerLink] = "['history/health']">Insurance</a>
 <form #f='ngForm' (ngSubmit)='submit(f.values)' ngNativeValidate> 
   <div class='form-group'>
     <label for='id'>Id</label>
@@ -32,7 +33,7 @@
     <th></th>
     <th></th>
   </tr>
-  <tr *ngFor="let eachPolicy of policyList | filter:'policyHolderName':searchName">
+  <tr *ngFor="let eachPolicy of policyList | filter:'policyHolderName':searchName | paginate:{itemsPerPage:2,currentPage:page}">
     <td>{{eachPolicy.id}}</td>
     <td>{{eachPolicy.policyHolderName | uppercase}}</td>
     <td>{{eachPolicy.Amount | currency :'INR':'symbol'}}</td>
@@ -41,3 +42,4 @@
     <td><button class="fa fa-2x fa-remove" (click)='remove(eachPolicy)'></button></td>
   </tr>
 </table>
+<pagination-controls (pageChange)='page=$event'></pagination-controls>
