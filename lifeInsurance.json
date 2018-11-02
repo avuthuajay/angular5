@@ -38,9 +38,9 @@
     },
     {
       "id": "107",
-      "policyHolderName": "new",
+      "policyHolderName": "new person",
       "maturityDate": "2018-11-29",
-      "policyAmount": "132645"
+      "policyAmount": "123456"
     }
   ],
   "advisors": [

@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { PolicyDetail } from '../policy-detail';
 import { InsuranceAPIService } from '../insurance-api.service';
+import { PolicyDetail } from '../policy-detail';
 
 @Component({
   selector: 'app-showpolicydetails',

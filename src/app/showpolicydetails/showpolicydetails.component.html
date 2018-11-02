@@ -1,5 +1,5 @@
 <a [routerLink] = "['history/health']">Insurance</a>
-<form #f='ngForm' (ngSubmit)='submit(f.values)' ngNativeValidate> 
+<form #f='ngForm' (ngSubmit)="submit(f.values)" ngNativeValidate> 
   <div class='form-group'>
     <label for='id'>Id</label>
     <input type="text" name='id' [(ngModel)]='policyData.id' class='form-control'>

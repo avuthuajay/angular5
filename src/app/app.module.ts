@@ -25,6 +25,8 @@ import { ShowpolicydetailsComponent } from './showpolicydetails/showpolicydetail
 import { FilterPipe } from './filter.pipe';
 import { ShowHealthPolicyComponent } from './show-health-policy/show-health-policy.component';
 import { DetailsComponent } from './details/details.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { DetailsComponent } from './details/details.component';
     ShowpolicydetailsComponent,
     FilterPipe,
     ShowHealthPolicyComponent,
-    DetailsComponent
+    DetailsComponent,
+    LifeCycleComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -59,5 +63,6 @@ import { DetailsComponent } from './details/details.component';
   providers: [HttpClient],
   entryComponents: [ShowLocatoinComponent],
   bootstrap: [AppComponent]
+  // bootstrap: [LifeCycleComponent]
 })
 export class AppModule { }
