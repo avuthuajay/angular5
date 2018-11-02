@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import {NgxPaginationModule} from 'ngx-pagination';
 
 
@@ -48,6 +48,7 @@ import { FilterPipe } from './filter.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     // NgxPaginationModule,
     FormsModule
   ],
