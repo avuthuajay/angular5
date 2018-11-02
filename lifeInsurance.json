@@ -1,0 +1,73 @@
+{
+  "lifeInsurance": [
+    {
+      "id": 101,
+      "policyHolderName": "Ajay",
+      "policyAmount": 500000,
+      "maturityDate": "2020-10-10"
+    },
+    {
+      "id": 102,
+      "policyHolderName": "Ramesh",
+      "policyAmount": 450000,
+      "maturityDate": "2021-10-10"
+    },
+    {
+      "id": 103,
+      "policyHolderName": "Srini",
+      "policyAmount": 400000,
+      "maturityDate": "2022-10-10"
+    },
+    {
+      "id": 104,
+      "policyHolderName": "Shiva",
+      "policyAmount": 350000,
+      "maturityDate": "2023-10-10"
+    },
+    {
+      "id": 105,
+      "policyHolderName": "Surya",
+      "policyAmount": 490000,
+      "maturityDate": "2024-10-10"
+    },
+    {
+      "id": 106,
+      "policyHolderName": "KP",
+      "policyAmount": 470000,
+      "maturityDate": "2025-10-10"
+    },
+    {
+      "id": "107",
+      "policyHolderName": "new",
+      "maturityDate": "2018-11-29",
+      "policyAmount": "132645"
+    }
+  ],
+  "advisors": [
+    {
+      "id": 201,
+      "name": "Kumar",
+      "mobileNumber": 9876543210
+    },
+    {
+      "id": 202,
+      "name": "Naide",
+      "mobileNumber": 9876543110
+    },
+    {
+      "id": 203,
+      "name": "T",
+      "mobileNumber": 9876541210
+    },
+    {
+      "id": 204,
+      "name": "Jaka",
+      "mobileNumber": 9876143210
+    },
+    {
+      "id": 205,
+      "name": "Krushna",
+      "mobileNumber": 9871543210
+    }
+  ]
+}

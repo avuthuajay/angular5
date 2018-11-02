@@ -1,0 +1,22 @@
+{
+    "prePaidPlans":[
+        {
+            "price": 199,
+            "validity": "28 Days",
+            "voice": "Unlimited",
+            "data": "2gb Per day"
+        },
+        {
+            "price": 299,
+            "validity": "28 Days",
+            "voice": "Unlimited",
+            "data": "3gb Per day"
+        },
+        {
+            "price": 399,
+            "validity": "84 Days",
+            "voice": "Unlimited",
+            "data": "1gb Per day"
+        }
+    ]
+}
