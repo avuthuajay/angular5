@@ -7,17 +7,18 @@ import { ShowAdvisorsComponent } from './show-advisors/show-advisors.component';
 import { ShowQuoteComponent } from './header/show-quote/show-quote.component';
 import { SearchBranchComponent } from './search-branch/search-branch.component';
 import { LogoutComponent } from './logout/logout.component';
+import { UniversalGuard } from './universal.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'home', component: LoginComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'login/:msg', component: LoginComponent },
   { path: 'products', component: ContentComponent },
-  { path: 'history', component: ShowpolicydetailsComponent },
+  { path: 'history', component: ShowpolicydetailsComponent, canActivate:[UniversalGuard] },
   { path: 'advisors', component: ShowAdvisorsComponent },
   { path: 'quote', component: ShowQuoteComponent },
   { path: 'branches', component: SearchBranchComponent },
-  { path: 'logout', component: LogoutComponent },
+  { path: 'logout', component: LogoutComponent, canDeactivate: [UniversalGuard] },
   { path: '**', redirectTo: 'login' }
 ];
 

@@ -17,6 +17,7 @@ export class ShowpolicydetailsComponent implements OnInit {
     policyAmount: 0
   };
   buttonText = 'Add';
+  page: number;
   policyList: PolicyDetail[] = [];
 
   @ViewChild('f') form: any;
